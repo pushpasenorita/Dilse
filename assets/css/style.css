@@ -21,9 +21,18 @@ li{
     font-size: 18px;
     font-weight: 600;
 }
+p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #5d5c5c;
+    line-height: 26px;
+    padding: 10px 0px;
+}
 /* 
 1. Header section.
 2. Navigation section.
+3. Our story section.
+4. Reservation section.
 */
 
 /* 1. Header section starts */
@@ -133,3 +142,150 @@ li{
     color: #fff;
 }
 /* 2. Navigation section ends. */
+
+/* 3. Our story section starts. */
+.ourstory-main{
+    margin: 50px 100px;
+    position: relative;
+}
+.ourstory-images{
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+.ourstory-images img{
+    width: 70%;
+    height: 80vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.ourstory-images img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.ourstory-content{
+    text-align: center;
+    padding: 50px;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 70vh;
+    position: absolute;
+    top: 0px;
+    z-index: +1;
+}
+.ourstory-content h5{
+    font-size: 40px;
+    font-family: "Ruge Boogie", cursive;
+    color: var(--main-color);
+}
+.ourstory-content a{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.ourstory-content h3{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* 3. Our story section ends. */
+
+/* 4. Reservation form section starts. */
+.reservation-form{
+    position: fixed;
+    top: 0;
+    z-index: +2;
+    background: rgba(0, 0, 0, .85);
+    width: 100%;
+    height: 100vh;
+    transform: scale(0);
+}
+.reservation-sec{
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.reservation-sec i{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.data-gap{
+    gap: 20px;
+}
+.reservation-form-data label{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 10px;
+}
+.reservation-form-data input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    height: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+.reservation-sec h2{
+    text-align: center;
+    font-size: 50px;
+    color: var(--main-color);
+}
+.reservation-sec h2 span{
+    font-size: 80px;
+    color: #fff;
+}
+.reservation-form-data textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.reservation-form-data select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    height: 60px;
+}
+.form-button button {
+    margin: 30px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form-date{
+    width: 180px;
+}
+.first-empty{
+    background-image: url("/assets/Images/empty-bg-image.jpg");
+    height: 40vh;
+   background-attachment: fixed;
+   margin: 50px 0px;
+}
+/* 4. Reservation form section ends. */

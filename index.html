@@ -11,6 +11,8 @@
     />
     <!-- Style sheet -->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Aos cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!--  Header section starts  -->
@@ -86,9 +88,12 @@
     <!--  Header section ends  -->
 
     <!-- Our story section starts -->
-    <section>
-      <div>
-        <div>
+    <section class="ourstory-main">
+      <div class="ourstory-section flex">
+        <div class="ourstory-content" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
           <h5>Discover</h5>
           <h3>Our Story</h3>
           <img
@@ -96,16 +101,11 @@
             alt="Flower Image"
           />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptatibus natus similique dignissimos assumenda corrupti? Minima
-            aliquam labore repellat aperiam, nihil ex debitis adipisci sunt modi
-            cupiditate iste veritatis? Eaque tempore recusandae accusamus
-            voluptatum minus enim ullam, sed, ipsam iste omnis quibusdam, at
-            voluptatibus sequi provident molestias soluta optio qui modi.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. 
           </p>
           <a href="#">Lear More</a>
         </div>
-        <div>
+        <div class="flex ourstory-images">
           <img src="/assets/Images/our-story-image1.jpg" alt="Story Image" />
           <img src="/assets/Images/our-story-image2.jpg" alt="Story Image" />
         </div>
@@ -118,12 +118,12 @@
     <!-- Empty section ends -->
 
     <!-- Reservation form section starts -->
-    <section>
-      <div>
-        <h2>Table Booking</h2>
+    <section class="reservation-form">
+      <div class="reservation-sec">
+        <h2>Table  <br><span>Booking</span></h2>
         <i class="fa-solid fa-xmark"></i>
-        <form action="">
-          <div>
+        <form action="" class="reservation-form-data">
+          <div class="flex data-gap">
             <div>
               <label for="">Name *</label> <br />
               <input type="text" />
@@ -137,17 +137,17 @@
               <input type="text" />
             </div>
           </div>
-          <div>
-            <div>
+          <div class="flex data-gap">
+            <div class="form-date">
               <label for="">Date *</label> <br />
               <input type="date" />
             </div>
-            <div>
+            <div class="form-date">
               <label for="">Time *</label> <br />
-              <input type="text" />
+              <input type="time" />
             </div>
-            <div>
-              <label for="">Phone *</label> <br />
+            <div class="form-date">
+              <label for="">Seats *</label> <br />
               <select name="" id="">
                 <option value="">1 Person</option>
                 <option value="">2 Person</option>
@@ -176,12 +176,53 @@
             <label for="">Special Request *</label> <br />
             <textarea name="" id=""></textarea>
           </div>
-          <div>
+          <div class="form-button">
             <button>Book Now</button>
           </div>
         </form>
       </div>
     </section>
     <!-- Reservation form section ends -->
+
+    <!-- First empty section starts. -->
+    <section class="first-empty">
+     
+    </section>
+    <!-- First empty section ends. -->
+   
+    <!-- Our menu section starts -->
+    <section>
+      <div>
+        <div>
+          <div>
+            <h5>Discover</h5>
+            <h4>MENUS</h4>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+            <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan.</p>
+          </div>
+          <div>
+            <h3>Starters</h3>
+            <div>
+              <h5>Baked Potato Pizza</h5>
+              <p>Potato / Bread / Cheese</p>
+              <div>
+                $12.0
+              </div>
+            </div>
+            <div>
+              <h6>NEW</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our menu section ends -->
+
+    <!-- Aos js cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
   </body>
 </html>
+ 
